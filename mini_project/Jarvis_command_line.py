@@ -62,7 +62,7 @@ def jarvis(data):
     elif "where is" in data:
         data = data.split(" ")
         location = data[2]
-        speak("Hold on Divyanshu, I will show you where " + location + " is.")
+        speak("Hold on Anushree, I will show you where " + location + " is.")
         wb.open_new_tab("https://www.google.nl/maps/place/" + location + "/&amp;")
     else :
         speak(",,,,,,,I did not get what you said !")
@@ -73,7 +73,7 @@ def jarvis(data):
 
 x=0
 print("Starting Program..")
-speak("Hi! Divyanshu, what can I do for you?")
+speak("Hi! Anushree, what can I do for you?")
 recognizedText = recognizeSpeech() # DO speech recognition
 ## data = "what time is it"
 jarvis(recognizedText) ## Process the text
